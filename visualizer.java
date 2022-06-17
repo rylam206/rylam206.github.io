@@ -1,9 +1,12 @@
-import javax.swing.Jframe;
-import javax.swing.JPanel;
+public class visualizer {
+    public static void main (String[] args){
+        //new GUI();
+        System.out.println("HI");
+    }
 
-public class visualizer{
-    public GUI{
-        Jframe frame = new Jframe();
+    public GUI(){
+        JFrame frame = new Jframe();
+        JButton button = new JButton("Click me");
         JPanel panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
         panel.setLayOut(new GridLayout(0, 1));
@@ -13,9 +16,5 @@ public class visualizer{
         frame.setTitle("Our GUI");
         frame.pack();
         frame.setVisible(true);
-    }
-
-    public static void main(String[] args){
-        new GUI();
     }
 }
